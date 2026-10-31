@@ -3,7 +3,7 @@
 Skräckljud för Halloween-skrämman i Home Assistant, servade via jsDelivr så att Google Cast-högtalarna kan hämta dem snabbt:
 
 ```
-https://cdn.jsdelivr.net/gh/vkardell/halloween-ljud@v1/<fil>.mp3
+https://cdn.jsdelivr.net/gh/vkardell/halloween-ljud@v2/<fil>.mp3
 ```
 
 ## Filerna
@@ -14,6 +14,18 @@ Paketet anger ingen licens.
 
 Originalen börjar med 2,75–4,0 s tystnad. Här är tystnaden bortklippt så att ljudet börjar efter cirka 0,1 s.
 Klippningen sker på MP3-ramgränser utan omkodning, så resten av ljudet är bit för bit identiskt med originalet.
+
+## Musiken
+
+I `musik/` ligger fyra spår som loopas efter skrämman tills grinden laddar om, oförändrade från incompetech.com:
+
+- "Myst on the Moor" Kevin MacLeod (incompetech.com)
+- "Gathering Darkness" Kevin MacLeod (incompetech.com)
+- "Ghost Story" Kevin MacLeod (incompetech.com)
+- "Spellbound" Kevin MacLeod (incompetech.com)
+
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
 
 ## Klippa en ny fil
 
