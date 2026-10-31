@@ -3,7 +3,7 @@
 Skräckljud för Halloween-skrämman i Home Assistant, servade via jsDelivr så att Google Cast-högtalarna kan hämta dem snabbt:
 
 ```
-https://cdn.jsdelivr.net/gh/vkardell/halloween-ljud@v4/<fil>.mp3
+https://cdn.jsdelivr.net/gh/vkardell/halloween-ljud@v5/<fil>.mp3
 ```
 
 ## Filerna
@@ -14,6 +14,10 @@ Paketet anger ingen licens.
 
 Originalen börjar med 2,75–4,0 s tystnad. Här är tystnaden bortklippt så att ljudet börjar efter cirka 0,1 s.
 Klippningen sker på MP3-ramgränser utan omkodning, så resten av ljudet är bit för bit identiskt med originalet.
+
+`diabolical_laugh_3x.mp3` är det elaka skrattet tre gånger i rad, gjort med
+`make_loop_mp3.py diabolical_laugh.mp3 diabolical_laugh_3x.mp3 3 --end 5.6`.
+Originalet slutar med 2,7 s tystnad. Den är bortklippt så att det bara blir cirka 0,4 s mellan skratten.
 
 ## Musiken
 
@@ -70,5 +74,5 @@ python3 trim_mp3.py original.mp3 klippt.mp3 <sekunder att ta bort>
 Skriptet hanterar bara CBR-MP3 i 44,1 kHz (som filerna i paketet) och har inga beroenden utöver Python 3.
 Sätt sekunderna till tiden för första hörbara ljud minus 0,1.
 
-Efter en ändring: committa, skapa en ny tagg (`v5` osv.) och peka om URL:erna i Home Assistant till den taggen.
+Efter en ändring: committa, skapa en ny tagg (`v6` osv.) och peka om URL:erna i Home Assistant till den taggen.
 jsDelivr cachar en tagg för alltid.
